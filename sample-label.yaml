@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-label-dev
+  labels:
+    env: dev
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.16
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-label-stg
+  labels:
+    env: stg
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.16
